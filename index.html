@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body
+    class="grid grid-cols-[8rem_minmax(25rem,_30%)_1fr] min-h-svh w-full bg-white relative max-sm:grid-cols-1 max-md:grid-cols-[minmax(16rem,_30%)_1fr] relative"
+  >
+    <header
+      class="flex flex-col w-32 h-full items-center p-8 gap-8 bg-hdr z-10 max-md:absolute max-md:hidden"
+    >
+      <div
+        class="flex flex-col w-full h-40 gap-6 items-center pb-8 border-2 border-hdr border-b-gray-300"
+      >
+        <a href="#" class="flex justify-center w-full"
+          ><img
+            src="assets/logo.svg"
+            alt="logo"
+            class="w-11 h-11 fill-green-500"
+        /></a>
+        <img
+          src="assets/images/user-profile-pic.png"
+          alt="user-profile-pic"
+          class="block w-11 h-11 rounded-full"
+        />
+      </div>
+
+      <div
+        class="flex flex-col w-full h-full gap-6 items-center justify-between"
+      >
+        <nav
+          class="flex flex-col w-full gap-4 items-center"
+          aria-labelledby="primary nav"
+        >
+          <a href="/" class="flex justify-center w-full p-4 rounded-3xl"
+            ><img
+              src="assets/icons/explore-icon.svg"
+              alt="explore-icon"
+              class="w-6 h-6 block fill-green-500"
+          /></a>
+          <a
+            href="#"
+            aria-current="true"
+            class="flex justify-center w-full p-4 rounded-3xl bg-green-500"
+            ><img
+              src="assets/icons/message-icon.svg"
+              alt="message-icon"
+              class="w-6 h-6 block fill-white"
+          /></a>
+          <a href="/" class="flex justify-center w-full p-4 rounded-3xl"
+            ><img
+              src="assets/icons/video-icon.svg"
+              alt="video icon"
+              class="w-6 h-6 block fill-green-500"
+          /></a>
+          <a href="/" class="flex justify-center w-full p-4 rounded-3xl"
+            ><img
+              src="assets/icons/music-icon.svg"
+              alt="music-icon"
+              class="w-6 h-6 block fill-green-500"
+          /></a>
+          <a href="/" class="flex justify-center w-full p-4 rounded-3xl"
+            ><img
+              src="assets/icons/calender-icon.svg"
+              alt="calender-icon"
+              class="w-6 h-6 block fill-green-500"
+          /></a>
+        </nav>
+
+        <nav
+          class="flex flex-col w-full gap-4 items-center"
+          aria-labelledby="secondary nav"
+        >
+          <a href="/" class="flex justify-center w-full p-4 rounded-3xl"
+            ><img
+              src="assets/icons/settings-icon.svg"
+              alt="settings-icon"
+              class="w-6 h-6 block fill-green-500"
+          /></a>
+          <a href="/" class="flex justify-center w-full p-4 rounded-3xl"
+            ><img
+              src="assets/icons/logout-icon.svg"
+              alt="logout-icon"
+              class="w-6 h-6 block fill-green-500"
+          /></a>
+        </nav>
+      </div>
+    </header>
+    <button id="toggle-header" class="hidden w-6 absolute z-10 top-20 max-md:block" type="button" title="toggle nav">
+      <svg
+        class="fill-green-500 -rotate-90 cursor-pointer transition-all duration-300"
+        viewBox="0 0 5 4"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M2.47508 3.64996L0 1.17488L0.825417 0.350042L2.47508 2.00029L4.12475 0.350042L4.95017 1.17488L2.47508 3.64996Z"
+        />
+      </svg>
+    </button>
+
+    <main>
+      <section class="messages-section">
+        <!-- Member 2 would work of this section for the ui of the messeges/chats -->
+        <!-- in the Assets/ folder, you will find the check, double check icons and 
+                other icons you might need in the icon folder, if you want to download new icon, 
+                make sure to save it in the icon folder 
+            -->
+        <!-- you can use any random images for demo... even your image if you choose to -->
+        <!-- you can delete this comment when you are set to work on this section -->
+      </section>
+
+      <section class="chat-box-section">
+        <!-- Member 3 would work on this section for the ui of individual chat box -->
+        <!-- icons are in assets/icons folder, you can add more if you would need one -->
+        <!-- you can delete this comment when you are set to work on this section -->
+      </section>
+    </main>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
