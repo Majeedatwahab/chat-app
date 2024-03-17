@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.show-header {
+  display: flex !important;
+  animation: showNavs 300ms;
+}
+
+@keyframes showNavs {
+  from {
+    transform: translateX(-3rem);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
