@@ -28,6 +28,18 @@ The tasks are divided as follows:
 - Readme was updated; the next member should do well to document their progress here as wee with their respective heading, (eg. ### Member 1 (Stanley Azi) update)
 - I used tailwind css, you can use write plain css in the style folder if you prefer that.
 
+
+
+### Member 3(Majeedat Abdulwahab) update
+- I worked on the chat section using HTML and and plain CSS.
+- I have also made sure that the chat section is responsive.
+- I added new images to the assets folder.
+- 
+
+
+
+
+
 #### Steps to start working on this project
 
 - fork the repo
