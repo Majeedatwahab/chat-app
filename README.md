@@ -1,6 +1,6 @@
 # chat-app
 
-##This repo is a Build of this figma template
+## This repo is a Build of this figma template
 
 https://www.figma.com/file/0LoDtINsNVMPEFShxO0fIP/Chat-for-desktop%2Fmobile-%7C-Free-to-use-(Community)?type=design&node-id=0-1&mode=design
 
