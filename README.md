@@ -14,6 +14,24 @@ The tasks are divided as follows:
 - Member3: takes care of the chat section
 - Member4: takes would colaborate.......
 
+
+#### Steps to start working on this project
+
+- fork the repo
+- clone the forked repo on your github
+- make sure to run ```git checkout -b <branch name>``` to create your own branch, replace the ```<branch name>``` with your branch name choice or run ```git checkout <branch name>``` or ```git switch <branch name>``` to switch to your branch if you all created the branch
+- run ```git branch``` to see confirm the branch you are on
+- ```cd``` into the cloned run ```pnpm install``` to install all dependencies on your machine
+- run ```pnpm run dev``` to create a port with vite and load the page on your browser
+- remember to update this Readme with what you worked on
+- after you are done, stage all changes in your branch and push to github.
+- make a pull request for your changes to be merged
+
+Let's go 🚀
+
+
+
+
 ## Progress status...
 
 ### Member 1 (Stanley Azi) update
@@ -44,16 +62,4 @@ The tasks are divided as follows:
 
 
 
-#### Steps to start working on this project
 
-- fork the repo
-- clone the forked repo on your github
-- make sure to run ```git checkout -b <branch name>``` to create your own branch, replace the ```<branch name>``` with your branch name choice or run ```git checkout <branch name>``` or ```git switch <branch name>``` to switch to your branch if you all created the branch
-- run ```git branch``` to see confirm the branch you are on
-- ```cd``` into the cloned run ```pnpm install``` to install all dependencies on your machine
-- run ```pnpm run dev``` to create a port with vite and load the page on your browser
-- remember to update this Readme with what you worked on
-- after you are done, stage all changes in your branch and push to github.
-- make a pull request for your changes to be merged
-
-Let's go 🚀
