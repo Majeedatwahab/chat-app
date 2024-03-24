@@ -192,6 +192,21 @@ line-height: 16px;
 
 
 
+@media screen and (max-width: 800px) {
+
+  
+.search{
+  display: flex;
+  width: 36vw;
+  height: 36px;
+  padding: 10px 12px;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0; 
+  border-radius: 12px;
+  background: #EEE; 
+  margin-left: 15px;
+}
 
 
 
@@ -199,6 +214,62 @@ line-height: 16px;
 
 
 
+  #chat{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 30vw;
+    height: 100vh;
+    top: 140px;
+    position: absolute;
+    left: 15%;
+    gap: 16px;
+    left: 15px;
+  
+  }
+  
+
+
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+
+
+.box1{
+  display: flex;
+width: 45vw;
+height: 7vh;
+align-items: center;
+justify-content:space-evenly;
+
+}
+
+
+
+.box1 h1{
+  color: rgba(0, 0, 0, 0.85);
+font-family: "SF Pro Display";
+font-size: 2vw;
+font-style: normal;
+font-weight: 500;
+line-height: 16px;
+
+}
+
+.box1 p{
+  color: rgba(0, 0, 0, 0.45);
+   font-size: 2vw;
+}
+
+
+
+
+}
 
 
 
