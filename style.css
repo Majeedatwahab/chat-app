@@ -30,6 +30,7 @@
   height: 100vh;
   width: 40vw;
   gap: 16px;
+  padding-left: 0.5vw;
 }
 
 .messages h1{
@@ -39,26 +40,26 @@ font-size: 23px;
 font-style: normal;
 font-weight: 700;
 line-height: 16px;
+margin-left: 1.5vw;
 }
 
 .search{
-  display:flex;
-  flex-direction: row;
-justify-self:flex-start;
- width: 30vw;
- height: 6vh;
+  display: flex;
+  width: 291px;
+  height: 36px;
   padding: 10px 12px;
-align-items: center;
+  align-items: center;
   gap: 16px;
-
+  flex-shrink: 0; 
   border-radius: 12px;
-background: #EEE;
+  background: #EEE; 
+  margin-left: 15px;
 }
 
 
 .search-input{
 background: #EEE; 
-
+  width: 20vw;
 }
 
 
@@ -68,10 +69,12 @@ background: #EEE;
   justify-content: flex-start;
   width: 30vw;
   height: 100vh;
-  top: 170px;
+  top: 140px;
   position: absolute;
   left: 15%;
   gap: 16px;
+  margin-left: 1.5vw;
+
 }
 
 .sort-options{
@@ -93,8 +96,6 @@ background: #EEE;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
-
-
 
 
 .box1{
@@ -150,7 +151,8 @@ flex-direction: column;
 align-items: flex-start;
 gap: 0px; 
 margin: 30px;
-margin-left: 0px;
+margin-left: 40px;
+width: 30vw;
 }
 
 #pin{
@@ -173,7 +175,6 @@ height: 15px;
   flex-direction: row;
   align-items: center;
 }
-
 
 button{
   display: inline-flex;
