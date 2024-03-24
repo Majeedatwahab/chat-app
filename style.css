@@ -114,12 +114,10 @@ justify-content:space-evenly;
 
 .box1 h1{
   color: rgba(0, 0, 0, 0.85);
-font-family: "SF Pro Display";
 font-size: 2vw;
 font-style: normal;
 font-weight: 500;
 line-height: 16px;
-
 }
 
 .box1 p{
