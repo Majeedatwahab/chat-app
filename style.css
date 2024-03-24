@@ -71,7 +71,7 @@ background: #EEE;
   height: 100vh;
   top: 140px;
   position: absolute;
-  left: 15%;
+  left: 8vw;
   gap: 16px;
   margin-left: 1.5vw;
 
@@ -100,7 +100,7 @@ background: #EEE;
 
 .box1{
   display: flex;
-width: 35vw;
+width: 20vw;
 height: 7vh;
 align-items: center;
 justify-content:space-evenly;
@@ -119,16 +119,16 @@ line-height: 16px;
 
 .box1 p{
   color: rgba(0, 0, 0, 0.45);
-   font-size: 1.6vw;
+   font-size: 1vw;
 }
 
 .profile-box{
   display: flex;
   flex-direction: column-reverse;
   height: 4vh;
+
+
 }
-
-
 
 .profile-img{
   width: 36px;
@@ -140,9 +140,10 @@ position: absolute;
 }
 
 .elipse{
-  z-index: 1;
-  margin-left: 1vw;
-  margin-bottom: 0.5vw;
+  width: 0.7vw;
+  z-index: 5;
+  margin-left: 2vw;
+  margin-bottom: 0.2vw;
 }
 
 .message-box{
@@ -209,11 +210,6 @@ line-height: 16px;
 }
 
 
-
-
-
-
-
   #chat{
     display: flex;
     flex-direction: column;
@@ -237,8 +233,6 @@ line-height: 16px;
 
 
 @media screen and (max-width: 600px) {
-
-
 
 .box1{
   display: flex;
@@ -274,6 +268,96 @@ line-height: 16px;
 
 
 
+
+@media screen and (max-width: 430px) {
+
+  .messages-section{
+    display: flex;
+    flex-direction: column;
+padding-left: 50px;;
+
+  }
+
+
+#frame2{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap; 
+ align-items: flex-start;
+  justify-content: flex-start;
+  justify-self: center !important;
+  height: 100vh;
+  width: 40vw;
+  gap: 16px;
+  padding-left: 0.5vw;
+}
+
+
+  
+  .search{
+    display: flex;
+    width: 50vw;
+    height: 36px;
+    padding: 10px 12px;
+    align-items: center;
+    gap: 16px;
+    flex-shrink: 0; 
+    border-radius: 12px;
+    background: #EEE; 
+    margin-left: 15px;
+  }
+  
+  
+    #chat{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      align-self: center !important;
+      width: 60vw;
+      height: 100vh;
+      top: 140px;   
+
+    }
+  
+  .box1{
+    display: flex;
+  width: 50vw;
+  height: 7vh;
+  align-items: center;
+  justify-content:space-evenly;
+  
+  }
+  
+  
+  .box1 h1{
+    color: rgba(0, 0, 0, 0.85);
+  font-family: "SF Pro Display";
+  font-size: 2vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  
+  }
+  
+  .box1 p{
+    color: rgba(0, 0, 0, 0.45);
+     font-size: 2vw;
+  }
+   
+
+  .profile-box{
+    display: flex;
+    flex-direction: column-reverse;
+    height: 4vh;
+  }
+  
+  
+  
+  }
+  
+  
+  
 
 
 
