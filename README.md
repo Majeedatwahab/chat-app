@@ -29,6 +29,10 @@ The tasks are divided as follows:
 - I used tailwind css, you can use write plain css in the style folder if you prefer that.
 
 
+### Member 3 (Chukwuma wisdom Anwaegbu) update
+- I Worked on the chat conatact section using html and css.
+- I also made sure it was responsive. 
+
 
 ### Member 3(Majeedat Abdulwahab) update
 - I worked on the chat section using HTML and and plain CSS.
