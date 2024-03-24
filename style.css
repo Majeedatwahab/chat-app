@@ -32,6 +32,12 @@
   padding-left: 0.5vw;
 }
 
+
+
+.messages-section{
+
+}
+
 .messages h1{
   color: #000;
  font-family:sans-serif;
@@ -189,6 +195,30 @@ line-height: 16px;
 
 
 
+@media screen and (max-width: 1280px) {
+
+
+#chat{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 30vw;
+  height: 100vh;
+  top: 140px;
+  position: absolute;
+  left: 11vw;
+  gap: 16px;
+  margin-left: 1.5vw;
+
+}
+
+
+
+
+
+
+}
+
 
 
 @media screen and (max-width: 800px) {
@@ -212,16 +242,51 @@ line-height: 16px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 30vw;
+    width: 50vw;
     height: 100vh;
     top: 140px;
     position: absolute;
     left: 15%;
-    gap: 16px;
-    left: 15px;
-  
+    gap: 16px;  
   }
   
+
+
+  .box1{
+    display: flex;
+  width: 40vw;
+  height: 5vh;
+  align-items: center;
+  justify-content:space-evenly;
+    gap: 10px;
+  }
+  
+  
+  .time-check{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 6px;
+    color: rgba(0, 0, 0, 0.45);
+    align-self: flex-end;
+    margin-bottom: 1vh;
+  }
+
+  .box1 p{
+    color: rgba(0, 0, 0, 0.45);
+     font-size: 1.5vw;
+  }
+  
+  .message-box{
+    display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0px; 
+  margin: 30px;
+  margin-top: 40px;
+  margin-left: 20px;
+  width: 30vw;
+  }
 
 
 }
