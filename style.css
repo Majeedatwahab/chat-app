@@ -60,12 +60,8 @@ margin-left: 1.5vw;
 .search-input{
 background: #EEE; 
   width: 20vw;
+  outline: none;
 }
-
-
-input:active{
- border: none;
-  }
 
 
 #chat{
