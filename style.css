@@ -20,11 +20,16 @@
 
 
 
-.messages{
+#frame2{
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
+  flex-wrap: nowrap; 
+ align-items: flex-start;
+  justify-content: flex-start;
+  justify-self: center !important;
+  height: 100vh;
+  width: 40vw;
+  gap: 16px;
 }
 
 .messages h1{
@@ -37,27 +42,176 @@ line-height: 16px;
 }
 
 .search{
-  display: flex;
+  display:flex;
   flex-direction: row;
-  width: 291px;
-  height: 36px;
+justify-self:flex-start;
+ width: 30vw;
+ height: 6vh;
   padding: 10px 12px;
-  align-items: center;
+align-items: center;
   gap: 16px;
-  flex-shrink: 0;
+
   border-radius: 12px;
 background: #EEE;
 }
 
 
-.searchinput{
-  /* width: 30vw;
-height: 36px;
-padding: 10px 12px;
-align-items: center; */
-/* gap: 16px; */
-/* flex-shrink: 0; */
-  /* border-radius: 12px;*/
+.search-input{
 background: #EEE; 
-margin-left: 2vw;
+
 }
+
+
+#chat{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 30vw;
+  height: 100vh;
+  top: 170px;
+  position: absolute;
+  left: 15%;
+  gap: 16px;
+}
+
+.sort-options{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-left: 2vw;
+}
+
+.sort-options{
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+
+
+.box1{
+  display: flex;
+width: 35vw;
+height: 7vh;
+align-items: center;
+justify-content:space-evenly;
+
+}
+
+.box1 h1{
+  color: rgba(0, 0, 0, 0.85);
+font-family: "SF Pro Display";
+font-size: 2vw;
+font-style: normal;
+font-weight: 500;
+line-height: 16px;
+
+}
+
+.box1 p{
+  color: rgba(0, 0, 0, 0.45);
+   font-size: 1.6vw;
+}
+
+.profile-box{
+  display: flex;
+  flex-direction: column-reverse;
+  height: 4vh;
+}
+
+
+
+.profile-img{
+  width: 36px;
+height: 36px;
+flex-shrink: 0;
+border-radius: 36px; 
+left: 0%;
+position: absolute;
+}
+
+.elipse{
+  z-index: 1;
+  margin-left: 1vw;
+  margin-bottom: 0.5vw;
+}
+
+.message-box{
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 0px; 
+margin: 30px;
+margin-left: 0px;
+}
+
+#pin{
+  width: 15px;
+height: 15px;
+}
+
+
+.time-check{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+  color: rgba(0, 0, 0, 0.45);
+  align-self: flex-end;
+}
+
+#head-tag{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+button{
+  display: inline-flex;
+align-items: center;
+gap: 7px;
+color: var(--Blue-2, #2D9CDB);
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
