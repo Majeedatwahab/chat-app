@@ -24,16 +24,19 @@
 
 /*member-3's css style*/
 
+
+
 body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .chat-box-section{
   width: 750px;
-  height: 750px;
-  background: #FAFAFA;
+  height: 720px;
+  background-color: #FAFAFA;
   position: absolute;
+  border-radius: 15px;
   top: 5px;
-  left: 670px;
+  left: 500px;
 }
 
 
@@ -392,12 +395,13 @@ margin-top: -5px;
 }
 
 .typing{
-  width: 720px;
-  height: 48px;
+  width: 748px;
+  height: 59px;
   position: relative;
-  top: 95px;
-  left: 5px;
-  color:#FFFFFF;
+  top: 96px;
+  left: 1px;
+  background-color:#FFFFFF;
+  border-radius: 0 0 15px 15px;
   
 }
 
@@ -405,6 +409,8 @@ margin-top: -5px;
   width: 699px;
   height: 42px;
   gap: 11px;
+  position: relative;
+  top: 5px;
   
 }
 
@@ -420,21 +426,22 @@ margin-top: -5px;
   color: #00000073;
 }
 
-.input-content-text{
+form{
   width: 545px;
   height: 36px;
   position: absolute;
   top: 3px;
   left: 53px;
   border-radius: 12px;
-  background: #FAFAFA;
+  background-color: #FAFAFA;
+  
 
 }
 
 input{
-  width: 158px;
   height: 17px;
   position: relative;
+  z-index: 999;
   top: 5px;
   left: 10px;
   font-size: 12px;
@@ -442,14 +449,28 @@ input{
   line-height: 17px;
   letter-spacing: 0em;
   text-align: left;
-  color: #00000073;
-  
+  outline: none;
+  color: #000000D9;
+  background-color: #FAFAFA; 
+}
+
+
+input[type = text]{
+  width: 530px;
+  outline: none;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+
+.mobile{
+  display: none;
 }
 
 .send{
+  display: block;
   width: 90px;
   height: 17px;
-  color: #27AE60;
   position:  absolute;
   left: 570px;
   top: 10px;
@@ -458,6 +479,7 @@ input{
   line-height: 17px;
   letter-spacing: 0em;
   text-align: left;
+  color: #27AE60;
 }
 
 .hr-2{
@@ -488,8 +510,8 @@ input{
 @media not all and (min-width:768px){
 
   .chat-box-section{
-    width: 350px;
-    height: 855px;
+    width: 349px;
+    height: 845px;
     position: absolute;
     top: 10px;
     left: 400px;
@@ -640,11 +662,11 @@ margin-top: -5px;
   margin-top: -15px;
 }
 .typing{
-  width: 319px;
-  height: 80px;
+  width: 347px;
+  height: 74px;
   position: relative;
-  top: 95px;
-  left: 5px;
+  top: 85px;
+  left: -5px;
 }
 
 .input-content{
@@ -666,12 +688,12 @@ margin-top: -5px;
   color: #00000073;
 }
 
-.input-content-text{
+form{
   width: 218px;
   height: 36px;
   position: absolute;
-  top: -3px;
-  left: 33px;
+  top: -1px;
+  left: 48px;
   border-radius: 12px;
 
 
@@ -688,8 +710,12 @@ input{
   line-height: 17px;
   letter-spacing: 0em;
   text-align: left;
-  color: #00000073;
-  
+  color: #000000D9;
+}
+input[type = text]{
+  width: 210px;
+  border: none;
+  outline: none;
 }
 .send{
   display: none;
