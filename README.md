@@ -56,7 +56,10 @@ Let's go 🚀
 - I worked on the chat section using HTML and and plain CSS.
 - I have also made sure that the chat section is responsive.
 - I added new images to the assets folder.
-- 
+- I have just made a few corrections.
+- I made the input field 100%.
+- I changed the send message into a button with a type of submit and a cursor: pointer.
+
 
 
 
