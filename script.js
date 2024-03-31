@@ -15,3 +15,40 @@ toggleBtn.on('click', () => {
         toggleBtn.style.left = '8rem'
     }
 })
+
+
+// MEMBER 4 CODE
+
+document.addEventListener("DOMContentLoaded", function() {
+    const messageInput = document.getElementById("messageInput");
+    const sendButton = document.getElementById("sendButton");
+    const messagesContainer = document.getElementById("messages");
+  
+    sendButton.addEventListener("click", function() {
+      const messageText = messageInput.value.trim();
+      if (messageText !== "") {
+        appendMessage(messageText);
+        messageInput.value = "";
+      }
+    });
+  
+    function appendMessage(messageText) {
+      const messageElement = document.createElement("div");
+      messageElement.classList.add("message");
+      messageElement.innerHTML = `
+        <p>${messageText}</p>
+        <span class="timestamp">${getCurrentTime()}</span>
+        <span class="tick">&#10003;&#10003;</span>
+      `;
+      messagesContainer.appendChild(messageElement);
+      messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    }
+  
+    function getCurrentTime() {
+      const now = new Date();
+      const hours = now.getHours().toString().padStart(2, "0");
+      const minutes = now.getMinutes().toString().padStart(2, "0");
+      return `${hours}:${minutes}`;
+    }
+  });
+  

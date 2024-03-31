@@ -60,6 +60,15 @@ Let's go 🚀
 - I made the input field 100%.
 - I changed the send message into a button with a type of submit and a cursor: pointer.
 
+### Member 4 (Olaniyi Olufemi)
+- I worked on making the input and send message button send the text into the chat box using java, html and css
+- i had to comment out the previous html as most of it was more of a place holder text
+
+- BUGS i noticed after git clone
+
+a The search bar seems to be positioned in the wrong place
+b The chat section does not have to scroll with the entire page only the contact section should scroll
+
 
 
 

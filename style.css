@@ -1148,3 +1148,106 @@ input[type = text]{
 }
 
 
+/* MEMBER 4 INPUT MESSAGE AND SEND CSS CODE */
+.chat-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("C:\Users\kilob\Desktop\HTML\Html 101\chat-app\img\chatbg.jpg");
+  background-size: contain;
+}
+
+.messages {
+  height: 520px;
+  padding: 10px;
+  margin-bottom: 10px;
+  overflow-y: scroll;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 19px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  color: #000;
+  float: right;
+  clear: both;
+  /* margin-right: -1%; */ /* Remove this line */
+  position: relative;
+  overflow-wrap: break-word;
+  max-width: 50vw;
+  min-width: 9vw;
+  
+}
+
+.message .timestamp {
+  font-size: 0.8em;
+  color: #888;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+.message .tick {
+  font-size: 0.8em;
+  color: #888;
+  position: absolute;
+  bottom: 5px;
+  right: 50px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  background-color: white;
+ 
+}
+
+.input-container input[type="text"] {
+  flex: 1;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+}
+
+.input-container button {
+  padding: 10px 20px;
+  background-color: #27AE60;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.input-container button:hover {
+  background-color: #0056b3;
+}
+
+/* For WebKit-based browsers (Chrome, Safari) */
+.chat-container {
+  scrollbar-width: thin; 
+}
+
+.chat-container {
+  scrollbar-color: transparent transparent; 
+}
+
+/* For Firefox */
+.chat-container::-webkit-scrollbar {
+  width: 5px;
+}
+
+.chat-container::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.chat-container::-webkit-scrollbar-track {
+  background: transparent; 
+}
+
