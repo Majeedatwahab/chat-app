@@ -20,11 +20,13 @@ toggleBtn.on('click', () => {
 // MEMBER 4 CODE
 
 document.addEventListener("DOMContentLoaded", function() {
+    // const messageForm = $('.input-container')
     const messageInput = document.getElementById("messageInput");
     const sendButton = document.getElementById("sendButton");
-    const messagesContainer = document.getElementById("messages");
+    const messagesContainer = document.getElementById("chats");
   
-    sendButton.addEventListener("click", function() {
+    sendButton.addEventListener("click", function(e) {
+      e.preventDefault()
       const messageText = messageInput.value.trim();
       if (messageText !== "") {
         appendMessage(messageText);
