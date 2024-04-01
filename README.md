@@ -91,23 +91,32 @@ b The chat section does not have to scroll with the entire page only the contact
 - to enhance specificity or avoid clashing of classes, chaining from parent class until the child class can be good, using css nexting would be great. e.g
 
 1
+```
 .icon-1, .icon-2 {
-width: max-content;
-height: max-content;
-
-& img {
-width: 1.5rem;
-height: 1.5rem;
-border-radius: unset;
+  width: max-content;
+  height: max-content;
+  
+  & img {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: unset;
+  }
 }
-}
-
+```
 2
-.profile-box .profile-img {
-display: block;
-width: 36px !important;
-height: 36px;
-border-radius: 50%;
-}
 
+```
+.profile-box .profile-img {
+  display: block;
+  width: 36px !important;
+  height: 36px;
+  border-radius: 50%;
+}
+```
 in the above, 1 is applying style to `.icon-1` and `.icon-2` and the same time, this reduces repeating of styles, and also it used css nesting which makes it look clean and easy to debug. 2 used chaining to increase specificity. `.profile-box .profile-img` means style the profile img that is a child/decendant of profile box... this can help in style clashing in a case where two different components have the same class name.
+
+- using relative units like ```em``` and ```rem``` over ```px``` is advisable. Here is a relative unit converter app I built some time ago that can help calculate your px and give you the relative units if you need one: [iConvertUnits](https://iconvertunits.vercel.app/).
+
+Well done to all the members involved in this  project. 🚀👏 
+
+Let's keep updating the README with updates.
