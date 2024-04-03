@@ -7,11 +7,10 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body
-  
-    class="grid grid-cols-[8rem_minmax(25rem,_30%)_1fr] min-h-svh w-full bg-white relative max-sm:grid-cols-1 max-md:grid-cols-[minmax(16rem,_30%)_1fr] relative"
+    class="flex min-h-svh w-full bg-white relative"
   >
     <header
-      class="flex flex-col w-32 h-full items-center p-8 gap-8 bg-hdr z-10 max-md:absolute max-md:hidden"
+      class="flex flex-col w-32 min-h-svh items-center p-8 gap-8 bg-hdr z-10 max-md:absolute max-md:hidden"
     >
       <div
         class="flex flex-col w-full h-40 gap-6 items-center pb-8 border-2 border-hdr border-b-gray-300"
@@ -90,7 +89,7 @@
         </nav>
       </div>
     </header>
-    <button id="toggle-header" class="hidden w-6 absolute z-10 top-20 max-md:block" type="button" title="toggle nav">
+    <button id="toggle-header" class="hidden w-6 absolute z-10 top-14 max-md:block" type="button" title="toggle nav">
       <svg
         class="fill-green-500 -rotate-90 cursor-pointer transition-all duration-300"
         viewBox="0 0 5 4"
@@ -103,263 +102,248 @@
       </svg>
     </button>
 
-    <main>
-      <section class="messages-section">
-   
-   <div>
-    <div id="frame2" class="messages">
-       <h1>Messages</h1>
-       <div>
-        <form class="search" action="/search">
-          <span>
-          <img src="assets/icons/Shape.svg">
+    <main class="flex w-full min-h-svh">
+      <section class="messages-section block w-max min-h-svh max-sm:w-full border-r-2">
+        <div id="frame2" class="messages">
+          <h1>Messages</h1>
+          <form class="search" action="/search">
+            <button type="submit" title="submit">
+              <img src="assets/icons/Shape.svg" alt="">
+            </button>
+            <input class="search-input"   type="search" id="search" name="" placeholder="Search">
+          </form>
+          <span class="sort-options">
+            <label for="myDropdown" class="dropbtn">Sort by</label>
+            <select id="myDropdown" class="dropdown-content">
+              <option>Newest</option>
+              <option>Option 1</option>
+              <option>Option 2</option>
+              <option>Option 3</option>
+            </select>
           </span>
-          <input class="search-input"   type="text" id="search" name="" placeholder="Search">
-      </form>
-    </div>
-    <div>
-        <span class="sort-options">
-           <p>Sort by</p>
-           <button class="dropbtn">Newest <img src="assets/icons/Vector.svg" alt=""></button>
-           <div id="myDropdown" class="dropdown-content">
-             <a href="#">Option 1</a>
-             <a href="#">Option 2</a>
-             <a href="#">Option 3</a>
-        </span>
-         </div>
+          <div id="chat" class="chat-boxes">
+            <div class="chat-box box1">
+              <span class="profile-box">
+                <img class="profile-img" src="assets/images/person1.png" alt="person">
+                <img src="assets/icons/Ellipse 2.svg" class="elipse"  alt="">
+              </span>
+              <div class="message-box">
+                <span id="head-tag">
+                  <img src="assets/icons/pin-icon.svg" id="pin" alt="">
+                  <h5>John Doe</h5>
+                </span>
+                <span>
+                  <p>How are you doing?</p>
+                </span>
+              </div>
+              <span class="time-check">
+                <p>16:45</p>
+                <img src="assets/icons/double-check-icon.svg" alt="double-check-icon">
+              </span>
+            </div>
+            <div class="chat-box box1">
+              <span class="profile-box">
+                <img class="profile-img" src="assets/images/Travis-barker.png" alt="person">
+                <img src="assets/icons/Ellipse 2.svg" class="elipse"  alt="">
+              </span>
+              <div class="message-box">
+                <span id="head-tag">
+                  <!-- <img src="assets/icons/pin-icon.svg" id="pin" alt=""> -->
+                  <h5>Travis Barker</h5>
+                </span>
+                <span>
+                  <p>...is typing</p>
+                </span>
+              </div>
+              <span class="time-check">
+                <p>16:45</p>
+                <img src="assets/icons/double-check-icon.svg" alt="double-check-icon">
+              </span>
+            </div>
+            <div class="chat-box box1">
+              <span class="profile-box">
+                <img class="profile-img" src="assets/images/person1.png" alt="person">
+                <img src="assets/icons/Ellipse 2.svg" class="elipse"  alt="">
+              </span>
+              <div class="message-box">
+                <span id="head-tag">
+                  <!-- <img src="assets/icons/pin-icon.svg" id="pin" alt="">                  -->
+                  <h5>Kate Rose</h5>
+                </span>
+                <span>
+                  <p>You: See you tomorrow!</p>
+                </span>
+              </div>
+              <span class="time-check">
+                <p>16:45</p>
+                <img src="assets/icons/double-check-icon.svg" alt="double-check-icon">
+              </span>
+            </div>
+            <div class="chat-box box1">
+              <span class="profile-box">
+                <img class="profile-img" src="assets/images/person1.png" alt="person">
+                <img src="assets/icons/Ellipse 2.svg" class="elipse"  alt="">
+              </span>
+              <div class="message-box">
+                <span id="head-tag">
+                  <!-- <img src="assets/icons/pin-icon.svg" id="pin" alt=""> -->
+                  <h5>Robert Parker</h5></span>
+                  <span>
+                  <p>Awesome!</p>
+                </span>
+              </div>
+              <span class="time-check">
+                <p>16:45</p>
+                <img src="assets/icons/double-check-icon.svg" alt="double-check-icon">
+              </span>
+            </div>
+            <div class="chat-box box1">
+              <span class="profile-box">
+                <img class="profile-img" src="assets/images/person1.png" alt="person">
+                <img src="assets/icons/Ellipse 2.svg" class="elipse"  alt="">
+              </span>
+              <div class="message-box">
+                <span id="head-tag">
+                  <!-- <img src="assets/icons/pin-icon.svg" id="pin" alt=""> -->
+                  <h5>Rick Owens</h5>
+                </span>
+                <span>
+                  <p>Good Idea</p>
+                </span>
+              </div>
+              <span class="time-check">
+                <p>16:45</p>
+                <img src="assets/icons/double-check-icon.svg" alt="double-check-icon">
+              </span>
+            </div>
+            <div class="chat-box box1">
+              <span class="profile-box">
+                <img class="profile-img" src="assets/images/person1.png" alt="person">
+                <img src="assets/icons/Ellipse 2.svg" class="elipse"  alt="">
+              </span>
+                <div class="message-box">
+                  <span id="head-tag">
+                    <!-- <img src="assets/icons/pin-icon.svg" id="pin" alt=""> -->
+                    <h5>Geogre Owell</h5>
+                  </span>
+                  <span>
+                    <p>you: Literally 1984</p>
+                  </span>
+                </div>
+                <span class="time-check">
+                  <p>16:45</p>
+                  <img src="assets/icons/double-check-icon.svg" alt="double-check-icon">
+                </span>
+            </div>
+            <div class="chat-box box1">
+              <span class="profile-box">
+                <img class="profile-img" src="assets/images/person1.png" alt="person">
+                <img src="assets/icons/Ellipse 2.svg" class="elipse"  alt="">
+              </span>
+              <div class="message-box">
+                <span id="head-tag">
+                  <!-- <img src="assets/icons/pin-icon.svg" id="pin" alt=""> -->
+                  <h5>Franz Kafka</h5>
+                </span>
+                  <span>
+                  <p>Are you intrested in.....</p>
+                </span>
+              </div>
+                <span class="time-check">
+                  <p>16:45</p>
+                  <img src="assets/icons/double-check-icon.svg" alt="double-check-icon">
+                </span>
+            </div>
+            <div class="chat-box box1">
+              <span class="profile-box">
+                <img class="profile-img" src="assets/images/person1.png" alt="person">
+                <img src="assets/icons/Ellipse 2.svg" class="elipse"  alt="">
+              </span>
+              <div class="message-box">
+                <span id="head-tag">
+                  <!-- <img src="assets/icons/pin-icon.svg" id="pin" alt=""> -->
+                  <h5>Tom Hardy</h5>
+                </span>
+                <span>
+                  <p>Smells Like design  spirit.....</p>
+                </span>
+              </div>
+                <span class="time-check">
+                  <p>16:45</p>
+                  <img src="assets/icons/double-check-icon.svg" alt="double-check-icon">
+                </span>
+            </div>
+            <div class="chat-box box1">
+              <span class="profile-box">
+                <img class="profile-img" src="assets/images/person1.png" alt="person">
+                <img src="assets/icons/Ellipse 2.svg" class="elipse"  alt="">
+              </span>
+              <div class="message-box">
+                <span id="head-tag">
+                  <!-- <img src="assets/icons/pin-icon.svg" id="pin" alt=""> -->
+                  <h5>Vivienne Westwood</h5>
+                </span>
+                <span>
+                  <p>This Cat is so funny</p>
+                </span>
+                </div>
+                <span class="time-check">
+                  <p>16:45</p>
+                  <img src="assets/icons/double-check-icon.svg" alt="double-check-icon">
+                </span>
+            </div>
+            <div class="chat-box box1">
+              <span class="profile-box">
+              <img class="profile-img" src="assets/images/person1.png" alt="person">
+              <img src="assets/icons/Ellipse 2.svg" class="elipse"  alt="">
+              </span>
+                <div class="message-box">
+                  <span id="head-tag">
+                    <!-- <img src="assets/icons/pin-icon.svg" id="pin" alt=""> -->
+                    <h5>Anthony Paul</h5></span>
+                    <span>
+                    <p>Check Out my Page</p>
+                  </span>
+                </div>
+                <span class="time-check">
+                  <p>16:45</p>
+                  <img src="assets/icons/double-check-icon.svg" alt="double-check-icon">
+                </span>
+            </div>
+          </div>
         </div>
-        <div id="chat" class="chat-boxes">
-           <div class="chat-box box1">
-            <span class="profile-box">
-            <img class="profile-img" src="assets/images/person1.png">
-            <img src="assets/icons/Ellipse 2.svg" class="elipse"  alt="">
-            </span>
-              <div class="message-box">
-              <span id="head-tag"><img src="assets/icons/pin-icon.svg" id="pin" alt="">
-                 
-                
-                <h5>John Doe</h5></span>
-                <span>
-                <p>How are you doing?</p>
-              </span>
-              </div>
-               <span class="time-check">
-                <p>16:45</p>
-                <img src="assets/icons/double-check-icon.svg">
-               </span>
-           </div>
-           <div class="chat-box box1">
-            <span class="profile-box">
-            <img class="profile-img" src="assets/images/Travis-barker.png">
-            <img src="assets/icons/Ellipse 2.svg" class="elipse"  alt="">
-            </span>
-              <div class="message-box">
-              <span id="head-tag"><img src="assets/icons/pin-icon.svg" id="pin" alt="">
-                 
-                
-                <h5>Travis Barker</h5></span>
-                <span>
-                <p>...is typing</p>
-              </span>
-              </div>
-               <span class="time-check">
-                <p>16:45</p>
-                <img src="assets/icons/double-check-icon.svg">
-               </span>
-           </div>
-           <div class="chat-box box1">
-            <span class="profile-box">
-            <img class="profile-img" src="assets/images/person1.png">
-            <img src="assets/icons/Ellipse 2.svg" class="elipse"  alt="">
-            </span>
-              <div class="message-box">
-              <span id="head-tag"><img src="assets/icons/pin-icon.svg" id="pin" alt="">
-                 
-                
-                <h5>Kate Rose</h5></span>
-                <span>
-                <p>You: See you tomorrow!</p>
-              </span>
-              </div>
-               <span class="time-check">
-                <p>16:45</p>
-                <img src="assets/icons/double-check-icon.svg">
-               </span>
-           </div>
-           <div class="chat-box box1">
-            <span class="profile-box">
-            <img class="profile-img" src="assets/images/person1.png">
-            <img src="assets/icons/Ellipse 2.svg" class="elipse"  alt="">
-            </span>
-              <div class="message-box">
-              <span id="head-tag"><img src="assets/icons/pin-icon.svg" id="pin" alt="">
-                 
-                
-                <h5>Robert Parker</h5></span>
-                <span>
-                <p>Awesome!</p>
-              </span>
-              </div>
-               <span class="time-check">
-                <p>16:45</p>
-                <img src="assets/icons/double-check-icon.svg">
-               </span>
-           </div>
-           <div class="chat-box box1">
-            <span class="profile-box">
-            <img class="profile-img" src="assets/images/person1.png">
-            <img src="assets/icons/Ellipse 2.svg" class="elipse"  alt="">
-            </span>
-              <div class="message-box">
-              <span id="head-tag"><img src="assets/icons/pin-icon.svg" id="pin" alt="">
-                 
-                
-                <h5>Rick Owens</h5></span>
-                <span>
-                <p>Good Idea</p>
-              </span>
-              </div>
-               <span class="time-check">
-                <p>16:45</p>
-                <img src="assets/icons/double-check-icon.svg">
-               </span>
-           </div>
-           <div class="chat-box box1">
-            <span class="profile-box">
-            <img class="profile-img" src="assets/images/person1.png">
-            <img src="assets/icons/Ellipse 2.svg" class="elipse"  alt="">
-            </span>
-              <div class="message-box">
-              <span id="head-tag"><img src="assets/icons/pin-icon.svg" id="pin" alt="">
-                 
-                
-                <h5>Geogre Owell</h5></span>
-                <span>
-                <p>you: Literally 1984</p>
-              </span>
-              </div>
-               <span class="time-check">
-                <p>16:45</p>
-                <img src="assets/icons/double-check-icon.svg">
-               </span>
-           </div>
-           <div class="chat-box box1">
-            <span class="profile-box">
-            <img class="profile-img" src="assets/images/person1.png">
-            <img src="assets/icons/Ellipse 2.svg" class="elipse"  alt="">
-            </span>
-              <div class="message-box">
-              <span id="head-tag"><img src="assets/icons/pin-icon.svg" id="pin" alt="">
-                 
-                
-                <h5>Franz Kafka</h5></span>
-                <span>
-                <p>Are you intrested in.....</p>
-              </span>
-              </div>
-               <span class="time-check">
-                <p>16:45</p>
-                <img src="assets/icons/double-check-icon.svg">
-               </span>
-           </div>
-           <div class="chat-box box1">
-            <span class="profile-box">
-            <img class="profile-img" src="assets/images/person1.png">
-            <img src="assets/icons/Ellipse 2.svg" class="elipse"  alt="">
-            </span>
-              <div class="message-box">
-              <span id="head-tag"><img src="assets/icons/pin-icon.svg" id="pin" alt="">
-                 
-                
-                <h5>Tom Hardy</h5></span>
-                <span>
-                <p>Smells Like design  spirit.....</p>
-              </span>
-              </div>
-               <span class="time-check">
-                <p>16:45</p>
-                <img src="assets/icons/double-check-icon.svg">
-               </span>
-           </div>
-           <div class="chat-box box1">
-            <span class="profile-box">
-            <img class="profile-img" src="assets/images/person1.png">
-            <img src="assets/icons/Ellipse 2.svg" class="elipse"  alt="">
-            </span>
-              <div class="message-box">
-              <span id="head-tag"><img src="assets/icons/pin-icon.svg" id="pin" alt="">
-                 
-                
-                <h5>Vivienne Westwood</h5></span>
-                <span>
-                <p>This Cat is so funny</p>
-              </span>
-              </div>
-               <span class="time-check">
-                <p>16:45</p>
-                <img src="assets/icons/double-check-icon.svg">
-               </span>
-           </div>
-           <div class="chat-box box1">
-            <span class="profile-box">
-            <img class="profile-img" src="assets/images/person1.png">
-            <img src="assets/icons/Ellipse 2.svg" class="elipse"  alt="">
-            </span>
-              <div class="message-box">
-              <span id="head-tag"><img src="assets/icons/pin-icon.svg" id="pin" alt="">
-                 
-                
-                <h5>Anthony Paul</h5></span>
-                <span>
-                <p>Check Out my Page</p>
-              </span>
-              </div>
-               <span class="time-check">
-                <p>16:45</p>
-                <img src="assets/icons/double-check-icon.svg">
-               </span>
-           </div>
-                    </div>
-       </div>
-   </div>
-  </div>       
-
-
-
-
-
       </section>
 
-      
-  <section class="chat-box-section">
+      <section class="chat-box-section max-sm:hidden w-full">
         <div class="profile-header"> 
           <div class="profile-content">
-          <img src="assets/images/Travis-barker.png" alt="profile picture of travis barker">
-        <div class="profile">
-          <div class="profile-name">
-            <h3>Travis Barker</h3>
-          </div>
-          <div class="profile-status">
-            <p>Online</p>
-          </div>
-          <div class="profile-icons">
-            <div class="icon-1">
-              <img src="assets/icons/video-icon.svg" alt="icon-1">
+            <img src="assets/images/Travis-barker.png" alt="profile picture of travis barker">
+            <div class="profile">
+              <div class="profile-name">
+                <h3>Travis Barker</h3>
+                <p class="profile-status">Online</p>
+              </div>
+              <div class="profile-icons">
+                <button type="button" class="icon-1">
+                  <img src="assets/icons/video-icon.svg" alt="icon-1">
+                </button>
+                <button type="button" class="icon-2">
+                  <img src="assets/icons/info-icon.svg" alt="icon-2" >
+                </button>
             </div>
-            <div class="icon-2">
-              <img src="assets/icons/info-icon.svg" alt="icon-2" >
             </div>
             
+              </div>
+            
+            </div>
           </div>
-        </div>
-       
-        </div>
+
         </div>
         <div class="mobile-profile-header">
-          <div class="notification-bar">
+          <!-- <div class="notification-bar">
             <p class="note-bar">9:41</p>
-          <img src="assets/images/Container.png" alt="" class="icon-box">
-          </div>
+            <img src="assets/images/Container.png" alt="" class="icon-box">
+          </div> -->
           <div class="mobile-profile-content">
             <div class="profile-content">
               <img src="assets/images/Travis-barker.png" alt="profile picture of travis barker">
@@ -463,23 +447,22 @@
 
 <!-- MEMBER 4 INPUT MESSAGE AND SEND CODE  -->
 
-          <div class="chat-container">
-            <div class="messages" id="messages">
-              <!-- Messages will be displayed here -->
-            </div>
-            <div class="input-container">
-              <input type="text" id="messageInput" placeholder="Type a message...">
-              <button id="sendButton">Send Message</button>
-            </div>
-          </div>          
-
-          <div class="home-indicator">
-            <img src="assets/images/Home Indicator.png" alt="">
+        <div class="chat-container">
+          <div class="chats" id="chats">
+            <!-- Messages will be displayed here -->
           </div>
-        </div>
+          <form class="input-container">
+            <input type="text" id="messageInput" placeholder="Type a message...">
+            <button type="submit" id="sendButton">Send Message</button>
+          </form>
+        </div>          
+
+        <!-- <div class="home-indicator">
+          <img src="assets/images/Home Indicator.png" alt="">
+        </div> -->
        
       </section>
-   
+ 
     </main>
 
     <script type="module" src="script.js"></script>
