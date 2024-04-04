@@ -44,7 +44,7 @@ Let's go 🚀
 
 ### Member 2 (Chukwuma wisdom Anwaegbu) update
 
-- I Worked on the chat conatact section using html and css.
+- I Worked on the chat contact section using html and css.
 - I also made sure it was responsive.
 
 ### Member 3(Majeedat Abdulwahab) update
