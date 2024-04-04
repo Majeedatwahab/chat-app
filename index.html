@@ -10,7 +10,7 @@
     class="flex min-h-svh w-full bg-white relative"
   >
     <header
-      class="flex flex-col w-32 min-h-svh items-center p-8 gap-8 bg-hdr z-10 max-md:absolute max-md:hidden"
+      class="flex flex-col w-32 max-h-svh overflow-y-scroll items-center p-8 gap-8 bg-hdr z-10 max-md:absolute max-md:hidden"
     >
       <div
         class="flex flex-col w-full h-40 gap-6 items-center pb-8 border-2 border-hdr border-b-gray-300"
@@ -102,8 +102,8 @@
       </svg>
     </button>
 
-    <main class="flex w-full min-h-svh">
-      <section class="messages-section block w-max min-h-svh max-sm:w-full border-r-2">
+    <main class="flex w-full max-h-svh">
+      <section class="messages-section block w-max max-h-svh max-sm:w-full border-r-2">
         <div id="frame2" class="messages">
           <h1>Messages</h1>
           <form class="search" action="/search">
@@ -125,7 +125,7 @@
             <div class="chat-box box1">
               <span class="profile-box">
                 <img class="profile-img" src="assets/images/person1.png" alt="person">
-                <img src="assets/icons/Ellipse 2.svg" class="elipse"  alt="">
+                <div class="elipse"></div>
               </span>
               <div class="message-box">
                 <span id="head-tag">
@@ -141,10 +141,10 @@
                 <img src="assets/icons/double-check-icon.svg" alt="double-check-icon">
               </span>
             </div>
-            <div class="chat-box box1">
+            <div class="chat-box box1" aria-current="true">
               <span class="profile-box">
                 <img class="profile-img" src="assets/images/Travis-barker.png" alt="person">
-                <img src="assets/icons/Ellipse 2.svg" class="elipse"  alt="">
+                <div class="elipse"></div>
               </span>
               <div class="message-box">
                 <span id="head-tag">
@@ -162,13 +162,13 @@
             </div>
             <div class="chat-box box1">
               <span class="profile-box">
-                <img class="profile-img" src="assets/images/person1.png" alt="person">
-                <img src="assets/icons/Ellipse 2.svg" class="elipse"  alt="">
+                <img class="profile-img" src="assets/images/wisdom.png" alt="person">
+                <div class="elipse"></div>
               </span>
               <div class="message-box">
                 <span id="head-tag">
                   <!-- <img src="assets/icons/pin-icon.svg" id="pin" alt="">                  -->
-                  <h5>Kate Rose</h5>
+                  <h5>Wisdom</h5>
                 </span>
                 <span>
                   <p>You: See you tomorrow!</p>
@@ -181,13 +181,13 @@
             </div>
             <div class="chat-box box1">
               <span class="profile-box">
-                <img class="profile-img" src="assets/images/person1.png" alt="person">
-                <img src="assets/icons/Ellipse 2.svg" class="elipse"  alt="">
+                <img class="profile-img" src="assets/images/mj.png" alt="person">
+                <div class="elipse"></div>
               </span>
               <div class="message-box">
                 <span id="head-tag">
                   <!-- <img src="assets/icons/pin-icon.svg" id="pin" alt=""> -->
-                  <h5>Robert Parker</h5></span>
+                  <h5>Majeedat</h5></span>
                   <span>
                   <p>Awesome!</p>
                 </span>
@@ -199,13 +199,13 @@
             </div>
             <div class="chat-box box1">
               <span class="profile-box">
-                <img class="profile-img" src="assets/images/person1.png" alt="person">
-                <img src="assets/icons/Ellipse 2.svg" class="elipse"  alt="">
+                <img class="profile-img" src="assets/images/femi.png" alt="person">
+                <div class="elipse"></div>
               </span>
               <div class="message-box">
                 <span id="head-tag">
                   <!-- <img src="assets/icons/pin-icon.svg" id="pin" alt=""> -->
-                  <h5>Rick Owens</h5>
+                  <h5>Femi</h5>
                 </span>
                 <span>
                   <p>Good Idea</p>
@@ -219,7 +219,7 @@
             <div class="chat-box box1">
               <span class="profile-box">
                 <img class="profile-img" src="assets/images/person1.png" alt="person">
-                <img src="assets/icons/Ellipse 2.svg" class="elipse"  alt="">
+                <div class="elipse"></div>
               </span>
                 <div class="message-box">
                   <span id="head-tag">
@@ -238,7 +238,7 @@
             <div class="chat-box box1">
               <span class="profile-box">
                 <img class="profile-img" src="assets/images/person1.png" alt="person">
-                <img src="assets/icons/Ellipse 2.svg" class="elipse"  alt="">
+                <div class="elipse"></div>
               </span>
               <div class="message-box">
                 <span id="head-tag">
@@ -257,7 +257,7 @@
             <div class="chat-box box1">
               <span class="profile-box">
                 <img class="profile-img" src="assets/images/person1.png" alt="person">
-                <img src="assets/icons/Ellipse 2.svg" class="elipse"  alt="">
+                <div class="elipse"></div>
               </span>
               <div class="message-box">
                 <span id="head-tag">
@@ -276,7 +276,7 @@
             <div class="chat-box box1">
               <span class="profile-box">
                 <img class="profile-img" src="assets/images/person1.png" alt="person">
-                <img src="assets/icons/Ellipse 2.svg" class="elipse"  alt="">
+                <div class="elipse"></div>
               </span>
               <div class="message-box">
                 <span id="head-tag">
@@ -295,7 +295,7 @@
             <div class="chat-box box1">
               <span class="profile-box">
               <img class="profile-img" src="assets/images/person1.png" alt="person">
-              <img src="assets/icons/Ellipse 2.svg" class="elipse"  alt="">
+              <div class="elipse"></div>
               </span>
                 <div class="message-box">
                   <span id="head-tag">

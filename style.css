@@ -22,6 +22,11 @@
 
 /* member 2 css code*/
 
+.messages-section {
+  width: 22rem;
+  overflow-y: scroll;
+}
+
 #frame2 {
   display: flex;
   flex-direction: column;
@@ -29,9 +34,10 @@
   align-items: center;
   justify-content: flex-start;
   height: 100%;
-  width: 20rem;
+  /* width: inherit; */
   gap: 1rem;
-  padding: 1rem;
+  padding: 1rem 0;
+  position: relative;
 }
 
 #frame2.messages h1 {
@@ -46,7 +52,7 @@
 
 .search {
   display: flex;
-  width: 100%;
+  width: calc(100% - 2rem);
   height: 36px;
   padding: 10px 12px;
   align-items: center;
@@ -54,6 +60,7 @@
   flex-shrink: 0;
   border-radius: 12px;
   background: #eee;
+  margin-inline: 1rem;
   /* margin-left: 15px; */
 }
 
@@ -88,7 +95,7 @@
   /* position: absolute; */
   /* left: 8vw; */
   gap: 16px;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   /* margin-left: 1.5vw; */
 }
 
@@ -99,6 +106,7 @@
   gap: 10px;
   font-size: 1rem;
   color: rgba(0, 0, 0, 0.65);
+  padding-inline: 1rem;
   /* margin-left: 2vw; */
 }
 
@@ -120,6 +128,16 @@
   align-items: center;
   justify-content: space-between;
   gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #eeeeee62;
+  }
+}
+
+.chat-box[aria-current="true"] {
+  background-color: #eeeeee;
 }
 
 .chat-box h5 {
@@ -156,13 +174,18 @@
 }
 
 .elipse {
+  display: block;
   width: 0.7rem;
+  height: 0.7rem;
   z-index: 5;
   /* margin-left: 2rem;
   margin-bottom: 0.2rem; */
   position: absolute;
   top: 60%;
   right: 0;
+  background-color: #27ae60;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
 }
 
 .message-box {
@@ -180,6 +203,8 @@
 
   & p {
     font-size: 0.8rem;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
   }
 }
 
@@ -1122,6 +1147,8 @@ h1 span {
 .chats {
   height: 100%;
   padding: 10px;
+  width: 100%;
+  overflow-y: scroll;
   /* margin-bottom: 10px; */
 }
 
@@ -1198,12 +1225,18 @@ h1 span {
 
 /* For WebKit-based browsers (Chrome, Safari) */
 .chat-container,
-.chat-boxes {
+.chat-boxes,
+.messages-section,
+.chats,
+header {
   scrollbar-width: thin;
 }
 
 .chat-container,
-.chat-boxes {
+.chat-boxes,
+.messages-section,
+.chats,
+header {
   scrollbar-color: transparent transparent;
 }
 
