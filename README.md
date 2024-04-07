@@ -2,7 +2,7 @@
 
 ## This repo is a Build of this figma template
 
-https://www.figma.com/file/0LoDtINsNVMPEFShxO0fIP/Chat-for-desktop%2Fmobile-%7C-Free-to-use-(Community)?type=design&node-id=0-1&mode=design
+[figma file of the chat app](https://www.figma.com/file/0LoDtINsNVMPEFShxO0fIP/Chat-for-desktop%2Fmobile-%7C-Free-to-use-(Community)?type=design&node-id=0-1&mode=design)
 
 The tasks are divided as follows:
 
@@ -116,6 +116,18 @@ b The chat section does not have to scroll with the entire page only the contact
 in the above, 1 is applying style to `.icon-1` and `.icon-2` and the same time, this reduces repeating of styles, and also it used css nesting which makes it look clean and easy to debug. 2 used chaining to increase specificity. `.profile-box .profile-img` means style the profile img that is a child/decendant of profile box... this can help in style clashing in a case where two different components have the same class name.
 
 - using relative units like ```em``` and ```rem``` over ```px``` is advisable. Here is a relative unit converter app I built some time ago that can help calculate your px and give you the relative units if you need one: [iConvertUnits](https://iconvertunits.vercel.app/).
+
+
+### Member 1 (Stanley Azi) update 3
+
+- fixed overflow
+- added ability to switch between chat mates and update the chatbox respectively
+- added style to active chat
+
+##### what I think is left?
+
+- On mobile version, the chat box is hidden. It is intended to be opened and cover the entire screen when I new chat is clicked. and it should be able to display the correct chat box for each user message.
+- ability to store the chats in the local storage with respective user ID and be able to switch chats and see respective chats for each chat mate
 
 Well done to all the members involved in this  project. 🚀👏 
 
